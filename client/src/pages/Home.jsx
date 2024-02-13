@@ -1,9 +1,10 @@
 import Page from "../components/Page";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <Page><div><h2 className="OurFormula">Be Interactive.</h2></div>
-    <div><h3 className="DoIt2It" >Engage with oneself by cherishing this.</h3></div></Page>
+    <Page><div className="OurFormula" ><h2>Be Interactive.</h2></div>
+    <div className="DoIt2It" ><h3>Engage with oneself by cherishing this.</h3></div></Page>
   )
 };
 export default Home
