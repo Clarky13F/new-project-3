@@ -51,6 +51,11 @@ export default function Header() {
           </Link>
         )}
         {isAuthenticated && (
+          <Link to={"/donations"}>
+            <button style={styles.button}>Donations</button>
+          </Link>
+        )}
+        {isAuthenticated && (
           <button onClick={handleLogout} style={styles.button}>
             Logout
           </button>
@@ -66,10 +71,6 @@ export default function Header() {
           </Link>
         )}
         {!isAuthenticated && (
-          <Link to={"/donations"}>
-            <button style={styles.button}>Donations</button>
-          </Link>
-        )}{!isAuthenticated && (
           <Link to={"/purpose"}>
             <button style={styles.button}>About Us</button>
           </Link>

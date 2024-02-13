@@ -20,7 +20,8 @@
     "express": "^4.17.2",
     "graphql": "^16.2.0",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.0.2"
+    "mongoose": "^7.0.2",
+    "stripe": "^14.16.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

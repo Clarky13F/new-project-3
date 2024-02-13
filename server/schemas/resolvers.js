@@ -1,6 +1,7 @@
 const { User, Post, Comment } = require('../models');
 const { signToken, AuthenticationError, UserInputError } = require('../utils/auth');
 const { dateScalar } = require('./scalar');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const resolvers = {
   Date: dateScalar,
@@ -130,6 +131,30 @@ const resolvers = {
         throw UserInputError;
       }
     },
+    processDonation: async (parent, { amount }, context) => {
+      try {
+        const userId = context.user._id;
+    
+        const paymentIntent = await stripe.paymentIntents.create({
+          amount: Math.round(amount * 100),
+          currency: 'usd',
+          metadata: { userId },
+        });
+    
+        return {
+          success: true,
+          clientSecret: paymentIntent.client_secret,
+          message: "Donation processed successfully",
+        };
+      } catch (error) {
+        console.error('Error processing donation:', error.message);
+        return {
+          success: false,
+          clientSecret: null,
+          message: "Error processing donation",
+        };
+      }
+    }
   },
 };
 

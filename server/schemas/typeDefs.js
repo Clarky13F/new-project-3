@@ -45,6 +45,13 @@ const typeDefs = `
     createPost(concertName: String!, message: String!, image: String!): Post
     deletePost(postId: ID!): Post
     addComment(postId: ID!, message: String!): Comment
+    processDonation(amount: Float!): DonationResponse
+  }
+
+  type DonationResponse {
+    success: Boolean!
+    message: String
+    clientSecret: String
   }
 `;
 
