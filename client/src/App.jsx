@@ -9,11 +9,12 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
-import Footer from "./components/Footer.jsx" 
+import Footer from "./components/Footer.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import { Outlet } from "react-router-dom";
 import Auth from "./components/Auth";
 import './App.css';
+import Header from "./components/Header.jsx";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -48,7 +49,8 @@ const App = () => {
     </ApolloProvider>
   );
 }
-export default App;
+
+export default App 
 // export * from '@testing-library/react-native';
 
 // You can provide a way better UX than this when your app throws errors by providing your own ErrorBoundary or errorElement prop on your route.

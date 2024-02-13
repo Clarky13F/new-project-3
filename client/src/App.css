@@ -33,28 +33,6 @@ main {
   display: block;
 }
 
-.OurFormula {
-  text-align: center;
-  font-family: 'SimsSun';
-  padding: 0%;
-  color: rgb(0, 0, 0);
-  margin-left: 37.5%;
-  width: 25%;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.DoIt2It {
-  text-align: center; 
-  font-family: 'SimsSun'; 
-  padding: 0%; 
-  color:rgb(0, 0, 0); 
-  margin-left: 37.5%; 
-  width: 25%; 
-  margin-top: 20px; 
-  margin-bottom: 0px;
-}
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.

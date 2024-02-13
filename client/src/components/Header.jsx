@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import AuthServices from "../utils/auth";
 import { useSelector } from "react-redux";
 import { getUser } from "../redux/slices/userSlice";
-import "./Header.css";
 
 const styles = {
   container: {
@@ -39,10 +38,10 @@ export default function Header() {
 
   return (
     <nav className="NavBar" style={styles.container}>
-      <Link to={"/"} style={styles.undecoratedLink}>
-        <h1 className="LiveInteractive" >Live:Interactive</h1>
+      <Link className="LiveInteractive" to={"/"} style={styles.undecoratedLink}>
+        <h1 className="G0">Live:Interactive</h1>
       </Link>
-      <div style={styles.buttonDiv}>
+      <div className="Buttons" style={styles.buttonDiv}>
         {isAuthenticated && (
           <Link to={"/dashboard"}>
             <button className="Dashboard" style={styles.button}>Dashboard</button>

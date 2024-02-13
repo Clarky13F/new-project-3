@@ -1,7 +1,17 @@
 .LiveInteractive {
     text-align: center;
     font-family: 'SimsSun';
-    color:rgb(0, 0, 0); 
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 37%;
+    width: 25%;
+}
+
+.G0 {
+    font-family: 'SimsSun';
+    color:rgb(0, 0, 0);
+    font-size: 26px;
 }
 
 .NavBar {
@@ -15,62 +25,123 @@
     font-family: 'SimsSun';
     font-weight: bold;
     width: 100%;
-    height: 200px;
-    font-size: 40px;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    height: 100px;
     display: grid;
     opacity: .9;
+    grid-template-columns: 100%;
     box-shadow: inset;
-    box-shadow: 10px 10px 10px 10px;
-    border-radius: 25px 25px 25px 25px yellow;
+    box-shadow: 5px 5px 5px 5px #ff5a14;
+    border-radius: 25px 25px 25px 25px;
     margin-top: 0px; 
     margin-bottom: 0px;
 }
 
+.Buttons {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    height: 20px;
+    width: 100%;
+}
+
 .Dashboard {
     font-family: 'SimsSun'; 
+    font-size: 20px;
+    height: 20px;
+    width: 60px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
+}
+
+.OurFormula {
+    text-align: center;
+    font-family: 'SimsSun';
+    font-size: medium;
+    padding: 0%;
+    color: rgb(0, 0, 0);
+    margin-left: 37.5%;
+    width: 60px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.DoIt2It {
+    text-align: center; 
+    font-family: 'SimsSun'; 
+    font-size: 17px;
+    padding: 0%; 
+    color:rgb(0, 0, 0); 
+    margin-left: 37.5%; 
+    width: 60px;
+    margin-top: 30px; 
+    margin-bottom: 0px;
 }
 
 .Profile {
-    font-family: 'SimsSun'; 
-    padding: 0%; 
+    font-family: 'SimsSun';
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
+    padding: 0%;
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
 }
 
 .Logout {
     font-family: 'SimsSun'; 
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
 }
 
 .SignUp {
     font-family: 'SimsSun'; 
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
 }
 
 .Login {
     font-family: 'SimsSun'; 
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
 }
 
 .Donations {
     font-family: 'SimsSun'; 
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
 }
 
-.Purpose {
+.AboutUs {
     font-family: 'SimsSun'; 
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
 }
 
-.Contact {
-    font-family: 'SimsSun'; 
+.ContactUs {
+    font-family: 'SimsSun';
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
+    border-radius: 25px 25px 25px 25px;
 }
