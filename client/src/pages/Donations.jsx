@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-import Page from "../components/Page";
+// import Page from "../components/Page";
 
 const headContent = (
     <>

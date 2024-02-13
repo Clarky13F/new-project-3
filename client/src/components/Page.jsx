@@ -1,3 +1,7 @@
+// purpose of page ? - - overflow jsx from App.jsx - may not be necessary
+
+import "./Page.css";
+
 import { Helmet } from "react-helmet-async";
 import { useSelector } from "react-redux";
 import { getUser } from "../redux/slices/userSlice";
@@ -42,7 +46,7 @@ export default function Page({
         <main style={styles.main}>
           {isProtected && !isAuthenticated ? <div>Unauthorized</div> : children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

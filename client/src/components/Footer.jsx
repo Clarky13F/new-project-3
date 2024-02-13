@@ -1,3 +1,5 @@
+// import "./Footer.css";
+
 const styles = {
   container: {
     display: "flex",
@@ -19,3 +21,11 @@ export default function Footer() {
     </div>
   );
 }
+
+// const handleSubmit = (e) => {
+//   e.preventDefault();
+//   onSubmit({ concertName, message, image });
+//   setConcertName('');
+//   setMessage('');
+//   setImage(null);
+// };
