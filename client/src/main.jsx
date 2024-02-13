@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import "./index.css";
 import "symbol-observable";
 
 import Home from "./pages/Home";
@@ -10,6 +9,7 @@ import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard.jsx";
 import Profile from "./pages/Profile.jsx";
 import App from "./App.jsx";
+import Contact from "./pages/Contact.jsx"
 import Purpose from "./pages/Purpose.jsx";
 import Donations from "./pages/Donations.jsx";
 
@@ -45,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/Purpose",
         element: <Purpose />,
+      },
+      {
+        path: "Contact",
+        element: <Contact />,
       },
       {
         path: "/post/:postId",
