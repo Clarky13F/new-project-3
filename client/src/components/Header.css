@@ -1,7 +1,8 @@
 .LiveInteractive {
     text-align: center;
     font-family: 'SimsSun';
-    color:rgb(0, 0, 0); 
+    color:rgb(0, 0, 0);
+    margin-top: 10px;
 }
 
 .NavBar {
@@ -15,8 +16,8 @@
     font-family: 'SimsSun';
     font-weight: bold;
     width: 100%;
-    height: 200px;
-    font-size: 40px;
+    height: 100px;
+    font-size: 25px;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     display: grid;
     opacity: .9;
@@ -29,6 +30,7 @@
 
 .Dashboard {
     font-family: 'SimsSun'; 
+    font-size: 20px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
 }
@@ -41,36 +43,42 @@
 
 .Logout {
     font-family: 'SimsSun'; 
+    font-size: 20px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
 }
 
 .SignUp {
     font-family: 'SimsSun'; 
+    font-size: 20px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
 }
 
 .Login {
     font-family: 'SimsSun'; 
+    font-size: 20px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
 }
 
 .Donations {
     font-family: 'SimsSun'; 
+    font-size: 20px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
 }
 
-.Purpose {
+.AboutUs {
     font-family: 'SimsSun'; 
+    font-size: 20px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
 }
 
-.Contact {
+.ContactUs {
     font-family: 'SimsSun'; 
+    font-size: 20px;
     padding: 0%; 
     color:rgb(0, 0, 0); 
 }

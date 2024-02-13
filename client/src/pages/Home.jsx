@@ -1,19 +1,11 @@
 import Page from "../components/Page";
 
-const headContent = (
-  <>
-    <title>Home</title>
-    <meta name="description" content="This is the home page of my app." />
-  </>
-);
-
-export default function Home() {
+const Home = () => {
   return (
-    <Page isProtected={false} headContent={headContent}>
-      <div className="OurFormula text-align: center; font-family: 'SimsSun'; padding: 0%; color: rgb(0, 0, 0); margin-left: 37.5%; width: 25%; margin-top: 20px; margin-bottom: 0px;"><h2>Be Interactive.</h2></div>
-      <div className="DoIt2It text-align: center; font-family: 'SimsSun'; padding: 0%; color: rgb(0, 0, 0); margin-left: 37.5%; width: 25%; margin-top: 20px; margin-bottom: 0px;"><h3>Engage with oneself by cherishing this.</h3></div>
-    </Page>
-  );
-}
+    <Page><div><h2 className="OurFormula">Be Interactive.</h2></div>
+    <div><h3 className="DoIt2It" >Engage with oneself by cherishing this.</h3></div></Page>
+  )
+};
+export default Home
 
-// continue. sip on water, this sweet, crisp air, treasure each moment - - as one.
+// continue. sip on water, this sweet, crisp air, & treasure each moment - - as one.

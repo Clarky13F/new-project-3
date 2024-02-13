@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import AuthServices from "../utils/auth";
 import { useSelector } from "react-redux";
 import { getUser } from "../redux/slices/userSlice";
-import "./Header.css";
 
 const styles = {
   container: {
