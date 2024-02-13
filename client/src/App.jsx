@@ -48,7 +48,6 @@ const App = () => {
     </ApolloProvider>
   );
 }
-
 export default App;
 // export * from '@testing-library/react-native';
 

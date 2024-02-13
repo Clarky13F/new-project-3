@@ -10,8 +10,10 @@ const headContent = (
 export default function Home() {
   return (
     <Page isProtected={false} headContent={headContent}>
-      <div><h2>Welcome to Live:Interactive</h2></div>
-      <div><h3>Join today to to getting help finding or returning lost items today!</h3></div>
+      <div className="OurFormula text-align: center; font-family: 'SimsSun'; padding: 0%; color: rgb(0, 0, 0); margin-left: 37.5%; width: 25%; margin-top: 20px; margin-bottom: 0px;"><h2>Be Interactive.</h2></div>
+      <div className="DoIt2It text-align: center; font-family: 'SimsSun'; padding: 0%; color: rgb(0, 0, 0); margin-left: 37.5%; width: 25%; margin-top: 20px; margin-bottom: 0px;"><h3>Engage with oneself by cherishing this.</h3></div>
     </Page>
   );
 }
+
+// continue. sip on water, this sweet, crisp air, treasure each moment - - as one.
