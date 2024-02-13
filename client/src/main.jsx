@@ -10,6 +10,9 @@ import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard.jsx";
 import Profile from "./pages/Profile.jsx";
 import App from "./App.jsx";
+import About from "./pages/About.jsx";
+import Donations from "./pages/Donations.jsx";
+
 
 import PostDetail from "./components/PostDetail.jsx";
 
@@ -40,9 +43,17 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
+        path: "/about",
+        element: <about />,
+      },
+      {
         path: "/post/:postId",
         element: <PostDetail />,
-      }
+      },
+      {
+        path: "/donations",
+        element: <Donations />,
+      },
     ],
   },
 ]);
