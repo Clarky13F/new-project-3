@@ -1,8 +1,14 @@
-// client/src/pages/About.jsx
-
 import React from 'react';
+import Page from "../components/Page";
 
-const About = () => {
+const headContent = (
+  <>
+    <title>About</title>
+    <meta name="description" content="This is the about page of my app." />
+  </>
+);
+
+export default function Purpose() {
   return (
     <div>
       <h2>About Us</h2>
@@ -19,5 +25,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;

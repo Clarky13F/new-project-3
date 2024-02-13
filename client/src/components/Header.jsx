@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <nav style={styles.container}>
       <Link to={"/"} style={styles.undecoratedLink}>
-        <h1>Lost and Found</h1>
+        <h1>Live:Interactive</h1>
       </Link>
       <div style={styles.buttonDiv}>
         {isAuthenticated && (
@@ -63,6 +63,15 @@ export default function Header() {
         {!isAuthenticated && (
           <Link to={"/login"}>
             <button style={styles.button}>Login</button>
+          </Link>
+        )}
+        {!isAuthenticated && (
+          <Link to={"/donations"}>
+            <button style={styles.button}>Donations</button>
+          </Link>
+        )}{!isAuthenticated && (
+          <Link to={"/purpose"}>
+            <button style={styles.button}>About Us</button>
           </Link>
         )}
       </div>

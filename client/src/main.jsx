@@ -10,7 +10,7 @@ import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard.jsx";
 import Profile from "./pages/Profile.jsx";
 import App from "./App.jsx";
-import About from "./pages/About.jsx";
+import Purpose from "./pages/Purpose.jsx";
 import Donations from "./pages/Donations.jsx";
 
 
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <SignUp />,
       },
       {
-        path: "/about",
-        element: <about />,
+        path: "/Purpose",
+        element: <Purpose />,
       },
       {
         path: "/post/:postId",

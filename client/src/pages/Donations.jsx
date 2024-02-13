@@ -1,7 +1,13 @@
-// client/src/pages/Donations.jsx
-
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import Page from "../components/Page";
+
+const headContent = (
+    <>
+      <title>Donations</title>
+      <meta name="description" content="This is the donations page of my app." />
+    </>
+  );
 
 const Donations = () => {
   const stripe = useStripe();
