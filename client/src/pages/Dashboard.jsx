@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import Page from "../components/Page";
+import Page from "../components/Page";
 import PostForm from '../components/PostForm';
 import '../PostFormModal.css';
 import { Link } from 'react-router-dom';
