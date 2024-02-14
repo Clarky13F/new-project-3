@@ -1,19 +1,17 @@
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import "./index.css";
 import "symbol-observable";
-
+import App from "./App.jsx";
 import Home from "./pages/Home";
 import Page404 from "./pages/Page404";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard.jsx";
 import Profile from "./pages/Profile.jsx";
-import App from "./App.jsx";
+
+import Contact from "./pages/Contact.jsx"
 import Purpose from "./pages/Purpose.jsx";
 import Donations from "./pages/Donations.jsx";
-
-
 import PostDetail from "./components/PostDetail.jsx";
 
 const router = createBrowserRouter([
@@ -45,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/Purpose",
         element: <Purpose />,
+      },
+      {
+        path: "Contact",
+        element: <Contact />,
       },
       {
         path: "/post/:postId",

@@ -1,4 +1,5 @@
-import Page from "../components/Page";
+import "./PostDetail.css";
+// import Page from "../components/Page";
 
 import React, { useState } from 'react';
 import { useQuery, useMutation, gql } from '@apollo/client';

@@ -1,17 +1,12 @@
 import Page from "../components/Page";
+import "./Home.css";
 
-const headContent = (
-  <>
-    <title>Home</title>
-    <meta name="description" content="This is the home page of my app." />
-  </>
-);
-
-export default function Home() {
+const Home = () => {
   return (
-    <Page isProtected={false} headContent={headContent}>
-      <div><h2>Welcome to Live:Interactive</h2></div>
-      <div><h3>Join today to to getting help finding or returning lost items today!</h3></div>
-    </Page>
-  );
-}
+    <Page><div className="OurFormula" ><h2>Be Interactive.</h2></div>
+    <div className="DoIt2It" ><h3>Engage with oneself by cherishing this.</h3></div></Page>
+  )
+};
+export default Home
+
+// continue. sip on water, this sweet, crisp air, & treasure each moment - - as one.

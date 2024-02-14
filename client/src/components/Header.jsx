@@ -1,3 +1,5 @@
+import "./Header.css";
+
 import { Link } from "react-router-dom";
 import AuthServices from "../utils/auth";
 import { useSelector } from "react-redux";
@@ -35,44 +37,47 @@ export default function Header() {
   };
 
   return (
-    <nav style={styles.container}>
-      <Link to={"/"} style={styles.undecoratedLink}>
-        <h1>Live:Interactive</h1>
+    <nav className="NavBar" style={styles.container}>
+      <Link className="LiveInteractive" to={"/"} style={styles.undecoratedLink}>
+        <h1 className="G0">Live:Interactive</h1>
       </Link>
-      <div style={styles.buttonDiv}>
+      <div className="Buttons" style={styles.buttonDiv}>
         {isAuthenticated && (
           <Link to={"/dashboard"}>
-            <button style={styles.button}>Dashboard</button>
+            <button className="Dashboard" style={styles.button}>Dashboard</button>
           </Link>
         )}
         {isAuthenticated && (
           <Link to={"/profile"}>
-            <button style={styles.button}>Profile</button>
+            <button className="Profile" style={styles.button}>Profile</button>
           </Link>
         )}
         {isAuthenticated && (
-          <Link to={"/donations"}>
-            <button style={styles.button}>Donations</button>
-          </Link>
-        )}
-        {isAuthenticated && (
-          <button onClick={handleLogout} style={styles.button}>
+          <button onClick={handleLogout} className="Logout" style={styles.button}>
             Logout
           </button>
         )}
         {!isAuthenticated && (
           <Link to={"/signup"}>
-            <button style={styles.button}>Sign Up</button>
+            <button className="SignUp" style={styles.button}>Sign Up</button>
           </Link>
         )}
         {!isAuthenticated && (
           <Link to={"/login"}>
-            <button style={styles.button}>Login</button>
+            <button className="Login" style={styles.button}>Login</button>
           </Link>
         )}
         {!isAuthenticated && (
+          <Link to={"/donations"}>
+            <button className="Donations" style={styles.button}>Donations</button>
+          </Link>
+        )}{!isAuthenticated && (
           <Link to={"/purpose"}>
-            <button style={styles.button}>About Us</button>
+            <button className="AboutUs" style={styles.button}>About Us</button>
+          </Link>
+        )}{!isAuthenticated && (
+          <Link to={"/Contact"}>
+            <button className="ContactUs" style={styles.button}>Contact Us</button>
           </Link>
         )}
       </div>
