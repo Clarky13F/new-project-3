@@ -67,3 +67,13 @@ mutation AddComment($postId: ID!, $message: String!) {
   }
 }
 `;
+
+export const PROCESS_DONATION = gql`
+  mutation ProcessDonation($amount: Float!) {
+    processDonation(amount: $amount) {
+      success
+      message
+      clientSecret
+    }
+  }
+`;
