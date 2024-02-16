@@ -20,13 +20,40 @@
     margin-bottom: 0px;
 }
 
+#X {
+    font-size: 17px;
+    font-family: 'monospace';
+    font-weight: auto;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.GitHub {
+    font-size: 17px;
+    font-family: 'monospace';
+    font-weight: bold;
+    color: #000;
+}
+
 .FooterText {
     text-align: center;
+    font-family: 'SimsSun';
     font-weight: bold;
-    font-size: 22px;
+    font-size: 17px;
+    margin-left: 10px;
+    /* margin-top: 5px; */
 }
 
 #FooterIcon {
     width: 50px;
     height: auto;
+    background: transparent !important;
+    mix-blend-mode: multiply;
+}
+
+#ReactIcon {
+    margin-left: 10px;
+    background: transparent !important;
+    mix-blend-mode: multiply;
+    background-blend-mode: exclusion !important; ?
 }

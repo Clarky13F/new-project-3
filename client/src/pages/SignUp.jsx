@@ -82,7 +82,7 @@ export default function SignUp() {
 
   return (
     <Page isProtected={false} headContent={headContent}>
-      <div>Sign Up</div>
+      <div className="SignUpForm">Sign Up
       <form style={styles.form} onSubmit={handleFormSubmit}>
         <input
           placeholder="First Name"
@@ -121,7 +121,7 @@ export default function SignUp() {
             Submit
           </button>
         )}
-      </form>
+      </form></div>
       {error && <h3>{error.message}</h3>}
     </Page>
   );

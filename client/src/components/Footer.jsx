@@ -12,9 +12,9 @@ const styles = {
 export default function Footer() {
   return (
     <div className="Footer" style={styles.container}>
-      <p>&copy; {new Date().getFullYear()}</p>
-      <div><li><a href="https://github.com/Clarky13F/new-project-3">GitHub</a></li></div>
+      <p id="X">&copy; {new Date().getFullYear()}</p>
+      <a className="GitHub" href="https://github.com/Clarky13F/new-project-3">GitHub</a>
       <p className="FooterText">Generated using React via Brandon Clark, Marlie Ford, and Rutter McQuigg</p>
-      <button><img id="FooterIcon" src="../public/logo192.png" alt="FooterIcon" /></button></div>
+      <button id="ReactLogo" ><img id="FooterIcon" src="../public/logo192.png" alt="FooterIcon" /></button></div>
   );
 }
